@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wT4-0h-svp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MainViewController" customModule="GuessFlag2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BmL-dh-JdB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2336" y="106"/>
+        </scene>
+        <!--Loading View Controller-->
+        <scene sceneID="qdr-HR-zVH">
+            <objects>
+                <viewController id="wT4-0h-svp" customClass="LoadingViewController" customModule="GuessFlag2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5wb-f1-Ymf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pngwing.com-4" translatesAutoresizingMaskIntoConstraints="NO" id="mKa-U9-UxJ">
+                                <rect key="frame" x="65" y="244" width="284" height="408"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Угадай флаг!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1w-2I-IOT">
+                                <rect key="frame" x="104" y="644" width="206" height="53"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="33"/>
+                                <color key="textColor" red="0.94905978441238403" green="0.63751304149627686" blue="0.1087176576256752" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by @kodausch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zK3-rj-zdK">
+                                <rect key="frame" x="154" y="707" width="106" height="28"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ySh-Pb-fXs">
+                                <rect key="frame" x="188.5" y="785" width="37" height="37"/>
+                                <color key="color" red="0.94905978441238403" green="0.63751304149627686" blue="0.1087176576256752" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lP2-I4-AiX"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ySh-Pb-fXs" firstAttribute="centerX" secondItem="5wb-f1-Ymf" secondAttribute="centerX" id="2lY-lz-bfP"/>
+                            <constraint firstItem="mKa-U9-UxJ" firstAttribute="height" secondItem="5wb-f1-Ymf" secondAttribute="height" multiplier="0.455357" id="3ru-eS-o8C"/>
+                            <constraint firstItem="lP2-I4-AiX" firstAttribute="bottom" secondItem="ySh-Pb-fXs" secondAttribute="bottom" constant="40" id="J2C-Kk-RUU"/>
+                            <constraint firstItem="zK3-rj-zdK" firstAttribute="top" secondItem="U1w-2I-IOT" secondAttribute="bottom" constant="10" id="KXo-Ad-xhY"/>
+                            <constraint firstItem="U1w-2I-IOT" firstAttribute="centerX" secondItem="5wb-f1-Ymf" secondAttribute="centerX" id="Yhn-JY-Rsa"/>
+                            <constraint firstItem="zK3-rj-zdK" firstAttribute="centerX" secondItem="5wb-f1-Ymf" secondAttribute="centerX" id="dsy-h6-ay1"/>
+                            <constraint firstItem="mKa-U9-UxJ" firstAttribute="centerX" secondItem="5wb-f1-Ymf" secondAttribute="centerX" id="jto-6f-hkG"/>
+                            <constraint firstItem="ySh-Pb-fXs" firstAttribute="top" secondItem="zK3-rj-zdK" secondAttribute="bottom" constant="50" id="peu-Yv-lGX"/>
+                            <constraint firstItem="mKa-U9-UxJ" firstAttribute="centerY" secondItem="5wb-f1-Ymf" secondAttribute="centerY" id="y3R-6B-5Hf"/>
+                            <constraint firstItem="mKa-U9-UxJ" firstAttribute="width" secondItem="5wb-f1-Ymf" secondAttribute="width" multiplier="0.68599" id="yZq-bT-EK0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mn4-5s-W4J"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="id1" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="17b-Wo-13E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qCd-6D-ZyB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1534.7826086956522" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pngwing.com-4" width="500" height="620"/>
+    </resources>
+</document>
