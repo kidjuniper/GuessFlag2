@@ -34,7 +34,7 @@ extension MainViewController {
         case 4: indicator.indicator3.layer.backgroundColor = UIColor.green.cgColor
         case 6: indicator.indicator2.layer.backgroundColor = UIColor.yellow.cgColor
         case 8: indicator.indicator1.layer.backgroundColor = UIColor.orange.cgColor
-        case 0: indicator.indicator4.layer.backgroundColor = UIColor.red.cgColor
+        case 0: indicator.indicator0.layer.backgroundColor = UIColor.red.cgColor
         default:
             if clickersButtons.count % 10 == 1 {
                 [indicator.indicator0, indicator.indicator1, indicator.indicator2, indicator.indicator3, indicator.indicator4].forEach{
