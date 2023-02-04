@@ -42,7 +42,7 @@ extension MainViewController {
             }
         default:
             if clickersButtons.count % 10 == 1 {
-                [indicator.indicator0, indicator.indicator1, indicator.indicator2, indicator.indicator3, indicator.indicator4].forEach{
+                [indicator.indicator0, indicator.indicator1, indicator.indicator2, indicator.indicator3, indicator.indicator4].forEach {
                     $0.layer.backgroundColor = UIColor.white.cgColor
                     $0.layer.borderColor = UIColor.black.cgColor
                 }
